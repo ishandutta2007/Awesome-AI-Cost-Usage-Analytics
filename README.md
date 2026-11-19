@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-AI-Cost-Usage-Analytics/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Cost-Usage-Analytics?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Cost-Usage-Analytics/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Cost-Usage-Analytics?style=social" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Cost-Usage-Analytics/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-AI-Cost-Usage-Analytics?style=social" alt="GitHub forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Cost-Usage-Analytics/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-AI-Cost-Usage-Analytics?style=flat-square&color=blue" alt="Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-AI-Cost-Usage-Analytics/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
@@ -67,7 +67,7 @@ Below is a detailed analysis of leading commercial platforms for AI cost attribu
 
 ## 💻 Open-Source GitHub Projects
 
-Explore the most prominent open-source repositories powering LLM FinOps, token counting, local CLI usage monitors, and high-throughput AI gateways. **Sorted in descending order by GitHub Stars** ⭐:
+Explore the most prominent open-source repositories powering LLM FinOps, token counting, local CLI usage monitors, and high-throughput AI gateways. **Sorted in descending order by GitHub_Stars** ⭐:
 
 | 🌟 Stargazers Badge | 📦 Project Name | 💻 Repository Link | 📝 Description & Architectural Role |
 | :---: | :--- | :--- | :--- |
@@ -135,7 +135,7 @@ Contributions are warmly encouraged! Help keep this curated ecosystem fresh and 
 
 1. **Fork the repository** 🍴
 2. **Create a descriptive feature branch** (`git checkout -b feature/add-new-finops-tool`)
-3. **Add or update an entry**: Ensure accurate pricing, specific free tier limits, star badges, and links.
+3. **Add or update an entry**: Ensure accurate pricing, specific free tier limits, Stars_Badges, and links.
 4. **Commit your updates** (`git commit -m "Add NewTool to Open-Source FinOps"`)
 5. **Push and open a Pull Request** 🚀
 
