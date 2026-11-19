@@ -1,235 +1,156 @@
-# Awesome-AI-Cost-Usage-Analytics
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome AI Cost & Usage Analytics Banner" width="100%" />
+</p>
+
+# 💰 Awesome AI Cost & Usage Analytics
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Cost-Usage-Analytics/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-AI-Cost-Usage-Analytics?style=social" alt="GitHub stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Cost-Usage-Analytics/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-AI-Cost-Usage-Analytics?style=social" alt="GitHub forks" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Cost-Usage-Analytics/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-AI-Cost-Usage-Analytics?style=flat-square&color=blue" alt="Issues" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-AI-Cost-Usage-Analytics/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+---
+
+## 🧭 Executive Overview & SEO Meta
+
+A comprehensive, curated landscape of top **AI Cost & Usage Analytics SaaS products** and **Open-Source GitHub projects**. Engineered for engineering managers, AI FinOps practitioners, platform engineers, and AI developers navigating multi-provider LLM billing, token quota caps, agent spend tracking (`Claude Code`, `Cursor`, `Codex`), semantic caching savings, and self-hosted AI gateway architectures.
+
+* **Keywords**: `AI FinOps`, `LLM Observability`, `Token Usage Analytics`, `Claude Code Usage Monitor`, `AI Cost Optimization`, `LLM Gateway`, `Semantic Caching`, `Token Metering`, `Prompt Cost Calculator`, `Multi-Tenant AI Billing`.
+* **Last Updated**: November 2026 🚀
+
+---
+
+## 📑 Table of Contents
+
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS & Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Architecture & Recommended Stacks](#️-architecture--recommended-stacks)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [📜 Disclaimer](#-disclaimer)
+
+---
+
+## 📊 Sector Overview & Market Dynamics
+
+The global **AI FinOps and LLM Observability sector** represents a rapidly expanding market valued at over **$16.8 billion in 2026** (with specialized LLM observability scaling at a **36%+ CAGR** toward **$9.3 billion by 2030**). As enterprise generative AI shifts from proof-of-concept experimentation to multi-agent production systems, over 98% of FinOps practitioners now actively monitor and govern AI token spend.
+
+The market currently exhibits **moderate fragmentation with rapid enterprise consolidation** rather than a winner-take-all outcome:
+* **Infrastructure Giants & Enterprise APM**: Cloud platforms and cybersecurity giants are acquiring breakout gateway and tracing players (e.g., ClickHouse acquiring *Langfuse*, Palo Alto Networks acquiring *Portkey*, Cisco/Splunk acquiring *Galileo*, and Datadog building native LLM spans) to control end-to-end enterprise telemetry.
+* **Specialized High-Velocity Upstarts**: Dynamic model routers (e.g., *Martian*), modular open-source gateways (e.g., *LiteLLM*, *TensorZero*, *Helicone*), and real-time local agent monitors (e.g., *ccusage*, *Claude-Code-Usage-Monitor*) remain agile, capturing massive developer mindshare across hybrid cloud and local agentic environments.
+
+---
+
+## ☁️ SaaS & Hosted Platforms
+
+Below is a detailed analysis of leading commercial platforms for AI cost attribution, rate limiting, and token telemetry, **ranked by company size (valuation / public market cap)** in descending order:
+
+| 🏢 Platform | 💰 Starting Tier Price | 🎁 Free Tier / Trial Limits | 📈 Company Size (Valuation / Revenue) | 🔍 Key Capabilities & Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Cloudflare AI Gateway](https://developers.cloudflare.com/ai-gateway/)** | **$5.00 / month** *(Workers Paid starting tier; core AI Gateway proxy features are free)* | **Free Forever plan**: Capped at **200,000 logs/day** (3-day retention), up to 10 gateways per account, and 100,000 Worker requests/day | **~$35B Market Cap** *(Publicly traded: NYSE: NET)* | Global edge proxy network, built-in DDoS protection, unified provider billing, auto-routing, semantic response caching, and DLP security scanning. |
+| **[Datadog LLM Observability](https://www.datadoghq.com/product/llm-observability/)** | **$160.00 / month** *(Pro plan includes up to 100,000 LLM spans)* | **Free Forever tier**: **40,000 LLM spans per month** at no cost *(or 14-day free trial on full Datadog infrastructure suite)* | **~$40B Market Cap** *(Publicly traded: NASDAQ: DDOG)* | Unified enterprise APM and agent tracing, token consumption alerts, latency bottleneck root-cause analysis, and end-to-end infrastructure correlation. |
+| **[Martian](https://withmartian.com)** | **$0.00 base platform fee + usage-based model rates** *(pay-as-you-go router token pricing)* | **Free trial with introductory developer API credits** *(usage-based after initial credits; enterprise custom quotas on request)* | **~$1.3B Valuation** *(Backed by NEA, Prosus, General Catalyst & Accenture Ventures)* | Dynamic ML model routing engine that intercepts incoming prompts and dispatches each to the lowest-cost model capable of satisfying benchmark requirements. |
+| **[Portkey](https://portkey.ai)** | **$49.00 / month** *(Pro plan for scalable team production)* | **Free Forever Developer Plan**: Up to **10,000 recorded logs per month** (3 days log retention, 30 days metrics retention; excess traffic unblocked) | **~$60M Valuation** *(Acquired by Palo Alto Networks in May 2026; Series A raised $15M)* | Enterprise AI gateway, virtual API keys with hard/soft spend caps, automatic fallback routing, semantic caching, and team chargeback dashboards. |
+| **[Helicone](https://helicone.ai)** | **$79.00 / month** *(Pro plan includes longer retention, higher rate limits, and custom alerts)* | **Free Forever Hobby Plan**: Up to **10,000 requests per month**, 1 GB storage, 1 seat, and 7 days data retention | **~$25M Valuation** *(Seed funding of $5M in Sept 2024; ~$1M ARR; backed by Y Combinator)* | Lightweight proxy gateway, per-user/per-tenant spend attribution, semantic caching savings telemetry, threat detection, and custom budget alerts. |
+| **[Langfuse Cloud](https://langfuse.com)** | **$29.00 / month** *(Core plan includes 100,000 units/mo, unlimited users, and 90-day retention)* | **Free Forever Hobby Plan**: **50,000 units / month** (traces, observations, scores), 2 user seats, 30 days data retention, 1,000 req/min | **Acquired by ClickHouse** *(Parent valuation ~$15B Series D; previously raised $4.5M seed led by Lightspeed)* | Trace- and session-level cost rollups, automated multi-provider model pricing catalog, prompt management, and score/evaluation tracking. |
+| **[PromptLayer](https://promptlayer.com)** | **$49.00 / month** *(Pro plan for collaboration and analytics)* | **Free Forever plan**: **2,500 requests per month**, 250 evaluation executions, and up to 10 active managed prompts | **~$4.8M Total Seed Funding** *(Backed by ScOp VC, Stellation Capital; ~$1M estimated ARR)* | Prompt CMS, template-level cost and token attribution, visual versioning, latency benchmarking, and interactive LLM regression testing. |
+| **[BerriAI (LiteLLM Cloud)](https://litellm.ai)** | **$100.00 / month** *(Enterprise / Hosted LiteLLM Proxy licenses start at $100/mo or custom annual)* | **Free Forever Open Source plan**: **Unlimited self-hosted requests** (100% free under MIT license, no software request caps) | **~$1.6M Seed Funding** *(Backed by Y Combinator, Pioneer Fund; widely adopted by Fortune 500)* | Hosted control plane for LiteLLM Proxy, providing centralized multi-provider spend governance, SSO, team chargebacks, and budget enforcement. |
+| **[Keywords AI](https://keywordsai.co)** | **$7.00 / user / month** *(Entry collaborator tier; pay-as-you-go proxy usage)* | **Free Forever plan**: Up to **2,000 logs per month** *(plus $15 in introductory developer testing credits)* | **~$500K Seed Funding** *(Estimated ~$1.1M ARR; Y Combinator backed)* | Unified OpenAI-compatible gateway endpoint, complete cost analytics per API user, latency metrics, automatic fallbacks, and user rate limits. |
 
-## Top AI Cost & Usage Analytics Ecosystem
+---
 
+## 💻 Open-Source GitHub Projects
 
+Explore the most prominent open-source repositories powering LLM FinOps, token counting, local CLI usage monitors, and high-throughput AI gateways. **Sorted in descending order by GitHub Stars** ⭐:
 
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
+| 🌟 Stargazers Badge | 📦 Project Name | 💻 Repository Link | 📝 Description & Architectural Role |
+| :---: | :--- | :--- | :--- |
+| [![Stars](https://img.shields.io/github/stars/ollama/ollama?style=social&color=white)](https://github.com/ollama/ollama/stargazers) | **Ollama** | [`ollama/ollama`](https://github.com/ollama/ollama) | Ultra-popular framework for running open-weight LLMs locally and on private clusters with Prometheus token throughput metrics to eliminate third-party cloud API costs. |
+| [![Stars](https://img.shields.io/github/stars/vllm-project/vllm?style=social&color=white)](https://github.com/vllm-project/vllm/stargazers) | **vLLM** | [`vllm-project/vllm`](https://github.com/vllm-project/vllm) | High-throughput, memory-efficient LLM serving engine featuring PagedAttention and built-in token-level throughput, latency, and cost telemetry. |
+| [![Stars](https://img.shields.io/github/stars/BerriAI/litellm?style=social&color=white)](https://github.com/BerriAI/litellm/stargazers) | **LiteLLM Proxy** | [`BerriAI/litellm`](https://github.com/BerriAI/litellm) | Industrial-grade AI gateway proxy across 100+ LLMs with virtual keys, team/user budget caps, rate limiting, and real-time spend analytics. |
+| [![Stars](https://img.shields.io/github/stars/langfuse/langfuse?style=social&color=white)](https://github.com/langfuse/langfuse/stargazers) | **Langfuse** | [`langfuse/langfuse`](https://github.com/langfuse/langfuse) | Self-hostable open-source LLM engineering platform featuring automated token pricing tables, hierarchical trace/session cost rollups, and prompt usage dashboards. |
+| [![Stars](https://img.shields.io/github/stars/songquanpeng/one-api?style=social&color=white)](https://github.com/songquanpeng/one-api/stargazers) | **One-API** | [`songquanpeng/one-api`](https://github.com/songquanpeng/one-api) | Widely deployed multi-provider LLM key aggregation and billing gateway featuring granular token quota management, rate limiting, and consumption logs. |
+| [![Stars](https://img.shields.io/github/stars/comet-ml/opik?style=social&color=white)](https://github.com/comet-ml/opik/stargazers) | **Opik** | [`comet-ml/opik`](https://github.com/comet-ml/opik) | Open-source LLM evaluation, tracing, and operational cost monitoring platform by Comet for end-to-end agent token spend tracking. |
+| [![Stars](https://img.shields.io/github/stars/openai/tiktoken?style=social&color=white)](https://github.com/openai/tiktoken/stargazers) | **tiktoken** | [`openai/tiktoken`](https://github.com/openai/tiktoken) | Ultra-fast BPE token counter library by OpenAI used for pre-flight prompt counting, context budget enforcement, and cost pre-calculation. |
+| [![Stars](https://img.shields.io/github/stars/ryoppippi/ccusage?style=social&color=white)](https://github.com/ryoppippi/ccusage/stargazers) | **ccusage** | [`ryoppippi/ccusage`](https://github.com/ryoppippi/ccusage) | Blazing-fast CLI analyzer for parsing local Claude Code JSONL logs to display daily, monthly, and session token usage, cache hits, and USD spend. |
+| [![Stars](https://img.shields.io/github/stars/Portkey-AI/gateway?style=social&color=white)](https://github.com/Portkey-AI/gateway/stargazers) | **Portkey AI Gateway** | [`Portkey-AI/gateway`](https://github.com/Portkey-AI/gateway) | Ultra-fast open-source TypeScript AI gateway with multi-provider routing, automatic retries, budget enforcement headers, and sub-millisecond overhead. |
+| [![Stars](https://img.shields.io/github/stars/Arize-ai/phoenix?style=social&color=white)](https://github.com/Arize-ai/phoenix/stargazers) | **Phoenix** | [`Arize-ai/phoenix`](https://github.com/Arize-ai/phoenix) | AI observability and evaluation platform by Arize AI providing trace analysis, invocation costs, and detailed LLM token metrics. |
+| [![Stars](https://img.shields.io/github/stars/tensorzero/tensorzero?style=social&color=white)](https://github.com/tensorzero/tensorzero/stargazers) | **TensorZero** | [`tensorzero/tensorzero`](https://github.com/tensorzero/tensorzero) | High-performance LLM gateway and optimization engine written in Rust with ClickHouse-backed cost, latency, and token attribution analytics. |
+| [![Stars](https://img.shields.io/github/stars/huggingface/tokenizers?style=social&color=white)](https://github.com/huggingface/tokenizers/stargazers) | **Tokenizers** | [`huggingface/tokenizers`](https://github.com/huggingface/tokenizers) | Fast tokenizer library by Hugging Face for pre-flight token count validation, batch truncation, and strict inference cost governance. |
+| [![Stars](https://img.shields.io/github/stars/maximhq/bifrost?style=social&color=white)](https://github.com/maximhq/bifrost/stargazers) | **Bifrost** | [`maximhq/bifrost`](https://github.com/maximhq/bifrost) | High-throughput AI gateway built in Go featuring virtual key budgets, multi-provider fallback routing, and OpenTelemetry usage telemetry. |
+| [![Stars](https://img.shields.io/github/stars/Maciek-roboblog/Claude-Code-Usage-Monitor?style=social&color=white)](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor/stargazers) | **Claude-Code-Usage-Monitor** | [`Maciek-roboblog/Claude-Code-Usage-Monitor`](https://github.com/Maciek-roboblog/Claude-Code-Usage-Monitor) | Real-time terminal dashboard built with Rich monitoring Claude Code token burn velocity, 5-hour session reset countdowns, and plan exhaustion warnings. |
+| [![Stars](https://img.shields.io/github/stars/zilliztech/GPTCache?style=social&color=white)](https://github.com/zilliztech/GPTCache/stargazers) | **GPTCache** | [`zilliztech/GPTCache`](https://github.com/zilliztech/GPTCache) | Open-source semantic caching framework that intercepts repeated LLM queries to dramatically slash cloud API token costs and latency. |
+| [![Stars](https://img.shields.io/github/stars/traceloop/openllmetry?style=social&color=white)](https://github.com/traceloop/openllmetry/stargazers) | **OpenLLMetry** | [`traceloop/openllmetry`](https://github.com/traceloop/openllmetry) | OpenTelemetry instrumentation suite exporting standardized `gen_ai.usage.input_tokens` and operational cost metrics to Datadog, Prometheus, or Grafana. |
+| [![Stars](https://img.shields.io/github/stars/Helicone/helicone?style=social&color=white)](https://github.com/Helicone/helicone/stargazers) | **Helicone** | [`Helicone/helicone`](https://github.com/Helicone/helicone) | Open-source observability proxy enabling self-hosted request logging, token/cost breakdowns, caching savings tracking, and rate limiting. |
+| [![Stars](https://img.shields.io/github/stars/AgentOps-AI/AgentOps?style=social&color=white)](https://github.com/AgentOps-AI/AgentOps/stargazers) | **AgentOps** | [`AgentOps-AI/AgentOps`](https://github.com/AgentOps-AI/AgentOps) | Autonomous AI agent observability suite tracking multi-agent tool execution spend, recursive loop costs, and token burn rates. |
+| [![Stars](https://img.shields.io/github/stars/lm-sys/RouteLLM?style=social&color=white)](https://github.com/lm-sys/RouteLLM/stargazers) | **RouteLLM** | [`lm-sys/RouteLLM`](https://github.com/lm-sys/RouteLLM) | Framework by LMSYS for training and deploying cost-aware LLM routers that dynamically route simpler prompts to cheaper models while preserving output quality. |
+| [![Stars](https://img.shields.io/github/stars/openlit/openlit?style=social&color=white)](https://github.com/openlit/openlit/stargazers) | **OpenLIT** | [`openlit/openlit`](https://github.com/openlit/openlit) | OpenTelemetry-native AI FinOps platform delivering zero-code GPU and token cost metrics with customized pricing catalog support. |
+| [![Stars](https://img.shields.io/github/stars/phuryn/claude-usage?style=social&color=white)](https://github.com/phuryn/claude-usage/stargazers) | **claude-usage** | [`phuryn/claude-usage`](https://github.com/phuryn/claude-usage) | Lightweight macOS menu-bar utility and CLI monitor for tracking real-time Claude Code and Claude subscription quota consumption and session burn rates. |
+| [![Stars](https://img.shields.io/github/stars/AgentOps-AI/tokencost?style=social&color=white)](https://github.com/AgentOps-AI/tokencost/stargazers) | **TokenCost** | [`AgentOps-AI/tokencost`](https://github.com/AgentOps-AI/tokencost) | Utility library for calculating exact USD prompt and completion costs across hundreds of commercial LLMs with zero API overhead. |
+| [![Stars](https://img.shields.io/github/stars/bricks-cloud/BricksLLM?style=social&color=white)](https://github.com/bricks-cloud/BricksLLM/stargazers) | **BricksLLM** | [`bricks-cloud/BricksLLM`](https://github.com/bricks-cloud/BricksLLM) | Cloud-native AI gateway written in Go providing enterprise API key management, granular spend limits, rate policies, and Prometheus usage telemetry. |
+| [![Stars](https://img.shields.io/github/stars/hoangsonww/Claude-Code-Agent-Monitor?style=social&color=white)](https://github.com/hoangsonww/Claude-Code-Agent-Monitor/stargazers) | **Claude-Code-Agent-Monitor** | [`hoangsonww/Claude-Code-Agent-Monitor`](https://github.com/hoangsonww/Claude-Code-Agent-Monitor) | Real-time web dashboard for tracking Claude Code sub-agent executions, prompt tokens, session limits, and tool-invocation costs. |
 
-*Focused on AI Spend Attribution, Token & Quota Analytics, AI Proxy Gateways, Coding-Agent Usage Monitors & FinOps for LLMs*  
+---
 
-**Last updated: November 2026**
+## 🛠️ Architecture & Recommended Stacks
 
+For production systems, the most robust AI FinOps architectures combine complementary layers:
 
+```
+[Client / Agent / IDE] 
+       │
+       ▼
+ [Pre-Flight Budgeting] ──► tiktoken / tokenizers (context length checks & truncation)
+       │
+       ▼
+  [AI Proxy Gateway]    ──► LiteLLM / TensorZero / Portkey Gateway (virtual keys & spend caps)
+       │
+       ├─► [Semantic Cache] ──► GPTCache (drop token spend on repetitive queries)
+       ├─► [Cost Router]    ──► RouteLLM / Martian (dispatch to cheaper models)
+       │
+       ▼
+[Cloud / Local LLMs]    ──► OpenAI / Anthropic / vLLM / Ollama
+       │
+       ▼
+[Observability & FinOps]──► Langfuse / Helicone / OpenLIT / OpenLLMetry (cost rollups)
+```
 
-This repository tracks notable **SaaS platforms** and **open-source projects** for **AI Cost & Usage Analytics**. These tools meter prompt and completion token consumption across multi-provider LLM APIs, track coding-agent subscription quotas and burn rates (`Claude Code`, `Codex`, `Cursor`), enforce team/tenant budget alerts, and optimize AI FinOps via semantic caching and model routing.
+---
 
+## 📈 Star History
 
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-AI-Cost-Usage-Analytics&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-AI-Cost-Usage-Analytics&type=date&legend=top-left)
 
-**Examples** include Helicone, Langfuse, Portkey, PromptLayer, Martian, LiteLLM Proxy, Keywords AI, BerriAI, Cloudflare AI Gateway, Datadog LLM Observability, and claude-usage/claude-usage-monitor (the category leaders). 
+---
 
+## 🤝 How to Contribute
 
+Contributions are warmly encouraged! Help keep this curated ecosystem fresh and up to date:
 
-**Open-source emphasis**: This section is heavily expanded with every major active project for real-time CLI/TUI/menu-bar usage monitors, self-hosted LLM billing & analytics gateways, OpenTelemetry FinOps dashboards, and programmatic token-cost calculators — ideal for FinOps teams, AI platform engineers, and developers tracking token usage across cloud and local workflows.
+1. **Fork the repository** 🍴
+2. **Create a descriptive feature branch** (`git checkout -b feature/add-new-finops-tool`)
+3. **Add or update an entry**: Ensure accurate pricing, specific free tier limits, star badges, and links.
+4. **Commit your updates** (`git commit -m "Add NewTool to Open-Source FinOps"`)
+5. **Push and open a Pull Request** 🚀
 
+---
 
+## 💖 Support & Sponsorship
 
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+If you find this curated directory helpful for optimizing your AI infrastructure spend and token analytics, thank you for supporting the project!
 
+- ⭐ **Star this repository** on GitHub to help others discover it.
+- 🍴 **Fork and share** with fellow FinOps practitioners and AI engineers.
+- ☕ **Buy me a coffee / Sponsor**: If you'd like to support ongoing updates, please visit the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
 
+---
 
-## Table of Contents
+## 📜 Disclaimer
 
-- [SaaS/Hosted Platforms](#saashosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Helicone](https://helicone.ai)**  
-
-  Proxy-based AI gateway and cost analytics platform offering real-time token metering, per-user/customer spend attribution, semantic caching savings reports, and custom budget alerts.
-
-
-
-- **[Langfuse Cloud](https://langfuse.com)**  
-
-  Managed cloud deployment of the open-source LLM engineering platform providing automated model pricing tables, trace- and session-level cost rollups, and usage analytics.
-
-
-
-- **[Portkey](https://portkey.ai)**  
-
-  Enterprise AI gateway and FinOps suite featuring virtual API keys, granular spend caps, automatic fallback routing, semantic caching, and unified cost/usage dashboards.
-
-
-
-- **[Keywords AI](https://keywordsai.co)**  
-
-  Unified LLM gateway and monitoring platform delivering a single OpenAI-compatible endpoint with real-time cost breakdown, latency analytics, user spend limits, and caching.
-
-
-
-- **[Cloudflare AI Gateway](https://cloudflare.com)**  
-
-  Managed edge proxy sitting between applications and AI providers to provide unified request analytics, token/cost estimation, response caching, and rate limiting.
-
-
-
-- **[Datadog LLM Observability](https://datadoghq.com)**  
-
-  Enterprise cloud monitoring solution tracking end-to-end LLM and agent traces, token consumption, operational spend, latency bottlenecks, and drift metrics.
-
-
-
-- **[PromptLayer](https://promptlayer.com)**  
-
-  Prompt management and LLM analytics platform offering request history logging, token-per-template cost breakdowns, latency tracking, and A/B test evaluations.
-
-
-
-- **[Martian](https://withmartian.com)**  
-
-  Dynamic model-routing and cost-optimization API platform that automatically dispatches prompts to the lowest-cost LLM capable of meeting quality benchmarks.
-
-
-
-- **[BerriAI (LiteLLM Cloud)](https://litellm.ai)**  
-
-  Managed enterprise deployment of LiteLLM Proxy providing centralized spend governance, team/project chargebacks, SSO, and multi-provider quota enforcement.
-
-
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[claude-usage/claude-usage-monitor](https://github.com)**  
-
-  Open-source usage monitoring tool built for tracking real-time Claude and Claude Code token consumption, session window limits, burn rates, and usage analytics.
-
-
-
-- **[LiteLLM Proxy (`BerriAI/litellm`)](https://github.com)**  
-
-  Leading open-source (`MIT`) AI gateway and Python SDK providing a unified OpenAI-compatible proxy across 100+ LLMs with virtual keys, team/user budget caps, and real-time spend analytics.
-
-
-
-- **[Langfuse (`langfuse/langfuse`)](https://github.com)**  
-
-  Self-hostable open-source LLM engineering platform featuring customizable model token pricing, hierarchical trace/session cost aggregation, and prompt-level usage dashboards.
-
-
-
-- **[Helicone (`Helicone/helicone`)](https://github.com)**  
-
-  Open-source (`Apache-2.0`) AI gateway and observability proxy enabling self-hosted request logging, token/cost metrics, caching savings tracking, and rate limiting.
-
-
-
-- **[TensorZero (`tensorzero/tensorzero`)](https://github.com)**  
-
-  Open-source (`Apache-2.0`) industrial-grade LLM gateway, observability, and optimization engine written in Rust with ClickHouse-backed token, latency, and cost analytics.
-
-
-
-- **[One-API / New-API (`MartialBE/one-api` / `Calcium-Ion/new-api`)](https://github.com)**  
-
-  Popular open-source (`MIT`) multi-provider LLM key aggregation and billing gateway featuring token quota management, user groups, rate limiting, and detailed consumption logs.
-
-
-
-- **[Portkey AI Gateway (`Portkey-AI/gateway`)](https://github.com)**  
-
-  Ultra-fast open-source (`MIT`) AI gateway written in TypeScript providing multi-provider routing, automatic retries, token/cost metadata headers, and lightweight self-hosting.
-
-
-
-- **[OpenLIT (`openlit/openlit`)](https://github.com)**  
-
-  Open-source (`Apache-2.0`) OpenTelemetry-native AI observability and FinOps platform providing zero-code token/cost tracking, GPU utilization metrics, and customizable pricing files.
-
-
-
-- **[OpenLLMetry (`traceloop/openllmetry`)](https://github.com)**  
-
-  Open-source (`Apache-2.0`) OpenTelemetry instrumentation extensions exporting standardized `gen_ai.usage.input_tokens` and `output_tokens` metrics to Prometheus, Grafana, or Datadog.
-
-
-
-- **[ccusage (`ryoppippi/ccusage`)](https://github.com)**  
-
-  Fast open-source (`MIT`) CLI analyzer for parsing local Claude Code JSONL logs to display daily, monthly, and session-level token usage, prompt cache hit rates, and equivalent USD spend.
-
-
-
-- **[Claude-Code-Usage-Monitor (`Maciek-roboblog/Claude-Code-Usage-Monitor`)](https://github.com)**  
-
-  Real-time open-source (`MIT`) terminal dashboard built with Rich that monitors Claude Code token burn velocity, 5-hour session reset countdowns, plan limits, and predictive exhaustion warnings.
-
-
-
-- **[claude-usage (`phuryn/claude-usage`)](https://github.com)**  
-
-  Open-source macOS menu-bar utility and CLI monitor built for tracking real-time Claude Code and Claude subscription token consumption, rolling quota burn rates, and session costs.
-
-
-
-- **[TokenCost (`AgentOps-AI/tokencost`)](https://github.com)**  
-
-  Lightweight open-source (`MIT`) Python utility library for calculating exact USD prompt and completion costs across hundreds of commercial and hosted LLM models.
-
-
-
-- **[Bifrost (`maximhq/bifrost`)](https://github.com)**  
-
-  High-throughput open-source (`Apache-2.0`) AI gateway built in Go featuring sub-millisecond overhead, virtual key budgets, fallback routing, and OpenTelemetry usage metrics.
-
-
-
-- **[BricksLLM (`bricks-cloud/BricksLLM`)](https://github.com)**  
-
-  Open-source (`MIT`) cloud-native AI gateway written in Go providing enterprise API key management, granular spend limits, rate policies, and Prometheus usage telemetry.
-
-
-
-- **[RouteLLM (`lm-sys/RouteLLM`)](https://github.com)**  
-
-  Open-source (`Apache-2.0`) framework from LMSYS for training and serving cost-aware LLM routers that dynamically dispatch simple queries to cheaper models while preserving quality.
-
-
-
-- **[GPTCache (`zilliztech/GPTCache`)](https://github.com)**  
-
-  Open-source (`MIT`) semantic caching library that intercepts repetitive LLM prompts and serves cached completions to dramatically reduce API token expenditure.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Lunary (`lunary-ai/lunary`)](https://github.com)** and **[Opik (`comet-ml/opik`)](https://github.com)** for self-hosted LLM observability suites with built-in per-user, per-agent, and per-trace cost analytics.
-
-- **[tiktoken (`openai/tiktoken`)](https://github.com)** and **[Tokenizers (`huggingface/tokenizers`)](https://github.com)** for high-speed pre-flight token counting and context budget enforcement before calling paid APIs.
-
-- **[Grafana + Prometheus + OpenTelemetry Collector](https://github.com)** for building custom real-time FinOps token burn and quota dashboards from standardized OpenTelemetry `gen_ai` metrics.
-
-- **[hoangsonww/Claude-Code-Agent-Monitor](https://github.com)** for a web-based real-time dashboard monitoring Claude Code sub-agent sessions, tool calls, and token spend.
-
-- **[vLLM (`vllm-project/vllm`)](https://github.com)** and **[Ollama (`ollama/ollama`)](https://github.com)** for self-hosting open-weight models with Prometheus token-throughput metrics to eliminate per-token cloud API costs.
-
-
-
-**Frameworks for building custom systems**: Combine **LiteLLM Proxy** or **TensorZero** (for multi-provider budget caps & routing) with **Langfuse / OpenLIT** (for trace-level FinOps attribution), **claude-usage/claude-usage-monitor / ccusage** (for local coding-agent quota monitoring), and **TokenCost** for end-to-end AI cost and usage analytics.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
+*All trademarks, logos, and brand names belong to their respective owners. Product pricing, free tier limits, and valuations fluctuate over time and reflect publicly available market data as of late 2026. Please consult official provider documentation for current enterprise billing rates.*
